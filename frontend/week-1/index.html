@@ -8,8 +8,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="hamburger" onclick="document.body.classList.toggle('nav-open')">
+      ≡<img
+      class="logo"
+      src="DALL·E 2024-12-09 19.53.58 - A bright and vibrant logo design for a shop in SDA Market near IIT Delhi, emphasizing a blue and white color theme with increased brightness and contr.webp"
+      alt="Amazing Shop" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="close-nav" onclick="document.body.classList.toggle('nav-open')">
+        &times;
+      </li>
+    </ul>
+  </nav>
         <section class="forms-section">
-        <h1 class="section-title">SDA Market</h1>
+    
         <div class="forms">
           <div class="form-wrapper is-active">
             <button type="button" class="switcher switcher-login">
