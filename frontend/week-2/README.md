@@ -1,3 +1,8 @@
+=>Still trying to fix api issue,to check the frontend kindly type index.html for shop login,home.html,cashier-home.html,admin-home.html for specific purposes after:
+  https://aayupro.github.io/summer-of-code-2024/frontend/week-2/
+
+
+
 # Frontend Development : Week 2
 
 As discussed in the last week's session, this week, we will have a short introduction to what is API (for a detailed approach on how to make one, follow backend's materials) and how we use API to set up communication between server and client, in order to retrive, authenticate and store information.
