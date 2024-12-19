@@ -1,6 +1,6 @@
 =>Still trying to fix api issue,to check the frontend kindly type index.html for shop login,home.html,cashier-home.html,admin-home.html for specific purposes after:
   https://aayupro.github.io/summer-of-code-2024/frontend/week-2/
-
+=>Time for shift to end is present in cashier-home.html page.
 
 
 # Frontend Development : Week 2
