@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <link rel="stylesheet" href="admin-home.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="#">Admin Dashboard</a>
+        </div>
+        <div class="toggle-container">
+            <input type="checkbox" id="theme-toggle" class="theme-toggle">
+            <label for="theme-toggle" class="toggle-label"></label>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">New Cashier</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <h1>Welcome to the Admin Dashboard</h1>
+        
+        <!-- Dropdown to choose stock -->
+       
+        <div class="animated-dropdown">
+            <button class="button">Options &nbsp; ▼</button>
+            <div class="dropdown-content">
+              <a href="#">Stock 1</a>
+              <a href="#">Stock 2</a>
+              <a href="#">Stock 3</a>
+            </div>
+          </div>
+          
+
+
+        <!-- Buttons to Show/Hide Rows -->
+        <div class="buttons">
+            <button id="toggleTopSoldBtn">Show Top 6 Sold Stocks</button>
+            <button id="toggleRecentOrdersBtn">Show Recent Orders</button>
+            <button id="toggleUrgentStocksBtn">Show Urgently Needed Stocks</button>
+        </div>
+
+        <!-- Grid Layout for Top Sold Stocks -->
+        <h2>Top 6 Sold Stocks</h2>
+        <div class="grid-container" id="topSoldStocks" style="display: none;">
+            <div class="grid-item">Stock 1</div>
+            <div class="grid-item">Stock 2</div>
+            <div class="grid-item">Stock 3</div>
+            <div class="grid-item">Stock 4</div>
+            <div class="grid-item">Stock 5</div>
+            <div class="grid-item">Stock 6</div>
+        </div>
+
+        <!-- Recent Orders Section -->
+        <h2>Recent Orders (Last 24 hours)</h2>
+        <div class="orders-row" id="recentOrders" style="display: none;">
+            <div class="order-item">Order 1</div>
+            <div class="order-item">Order 2</div>
+            <div class="order-item">Order 3</div>
+            <div class="order-item">Order 4</div>
+        </div>
+
+        <!-- Urgently Needed Stocks Section -->
+        <h2>Urgently Needed Stocks</h2>
+        <div class="urgency-row" id="urgentStocks" style="display: none;">
+            <div class="urgency-item">Stock A</div>
+            <div class="urgency-item">Stock B</div>
+            <div class="urgency-item">Stock C</div>
+        </div>
+
+    </div>
+
+    <script src="admin-home.js"></script>
+</body>
+</html>

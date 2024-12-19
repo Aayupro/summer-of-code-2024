@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home-style.css">
+    <title></title>
+</head>
+<body>
+  
+
+    <div id="vanta-bg"></div>
+    <div class="choose-person">
+
+    <h3 class="d-1"><a href="admin-home.html">ADMIN</a></h3>
+    <h3 class="d-2"><a href="cashier-home.html">CASHIER</a></h3>
+     <!-- Vanta.js and Three.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+  
+<script>
+  const toggleCheckbox = document.getElementById('theme-toggle');
+
+toggleCheckbox.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
+</script>
+  <!-- Vanta Cells Effect Initialization -->
+  <script>
+    VANTA.CELLS({
+      el: "#vanta-bg", // Attach effect to this element
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      color1: 0x8c8c, // Adjust colors (optional)
+      color2: 0xf2e735
+    })
+  </script>
+</div>
+</body>
+</html>

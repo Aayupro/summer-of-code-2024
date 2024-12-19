@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cashier Page</title>
+  <link rel="stylesheet" href="cashier-home.css">
+</head>
+<body>
+  
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">MyBrand</div>
+      <div class="toggle-container">
+        <input type="checkbox" id="theme-toggle" class="theme-toggle">
+        <label for="theme-toggle" class="toggle-label"></label>
+    </div>
+      <ul class="nav-links">
+      <div class="timer-container">
+          
+          <div id="countdown" class="timer">00:00:00</div>
+      </div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Profile</a></li>
+        <li><a href="#contact">Contact Admin</a></li>
+      </ul>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <h1>SHOP NAME</h1>
+      <div class="header-buttons">
+        <!-- Profile Button -->
+        <button class="profile-btn" id="profile-btn">
+          <svg viewBox="0 0 496 512" class="profile-icon">
+            <path
+              d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96a88 88 0 1 1-88 88 88 88 0 0 1 88-88zm0 368a192 192 0 0 1-144.9-67.1c7.6-44.4 89.7-68.9 144.9-68.9s137.3 24.5 144.9 68.9A192 192 0 0 1 248 472z"
+            ></path>
+          </svg>
+        </button>
+        <!-- Logout Button -->
+        <button class="Btn">
+          <div class="sign" id="logout-btn">
+            <svg viewBox="0 0 512 512">
+              <path
+                d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"
+              ></path>
+            </svg>
+          </div>
+          <div class="text"><a href="index.html">Logout</a></div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Button to Open Customer Form -->
+    <div class="form-button-container">
+      <button class="button" id="open-form-btn">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Customer Form (Hidden by Default) -->
+    <div id="customer-form" class="form-container">
+      <h2>Customer Details</h2>
+      <form>
+        <div class="form__group field">
+          <input type="input" class="form__field" placeholder="Name" required="">
+          <label for="name" class="form__label">Name</label>
+      </div>
+      <div class="form__group field">
+        <input type="input" class="form__field" placeholder="Name" required="">
+        <label for="name" class="form__label">Phone No.</label>
+    </div>
+    <div class="form__group field">
+      <input type="input" class="form__field" placeholder="Name" >
+      <label for="name" class="form__label">Address</label>
+  </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+
+    <!-- Profile Card -->
+    <div id="profile-card" class="profile-card hidden">
+      <div class="profile-header">
+        <h2>Cashier Profile</h2>
+        <button id="close-profile-btn" class="close-btn">X</button>
+      </div>
+      <div class="profile-details">
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Email:</strong> john.doe@example.com</p>
+        <p><strong>Employee ID:</strong> C12345</p>
+      </div>
+    </div>
+  
+    
+  <script src="cashier-home.js"></script>
+      
+</body>
+</html>
